@@ -46,7 +46,7 @@ class Cart:
     def remove_item(self, item_id: int) -> None:
         # TODO: raise KeyError if the item is not in the cart
         for line in self.lines:
-            if line["itemd_id"] == item_id:
+            if line["item_id"] == item_id:
                 self.lines.remove(line)
                 return
 
